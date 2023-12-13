@@ -1,0 +1,302 @@
+*{
+    Margin: 0;
+    Padding: 0;
+    List-style: none;
+    Box-sizing: border-box;
+}
+
+.hero {
+    background-image: url(./Assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    /* border: 1px solid white; */
+    width: 85%;
+    align-self: center;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#hero-logo {
+    width: 100px;
+}
+
+.nav-bar {
+    /* border: 1px solid white; */
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar a {
+    /* border: 1px solid white; */
+    height: 50%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+main {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 315vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#hero-section {
+    position: absolute;
+    top: 280px;
+    margin-top: 10px;
+    padding: 10px;
+    /* border: 1px solid white; */
+    width: 70%;
+    height: auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-name {
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.slogan {
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#call-to-action {
+    margin-top: 30px;
+    border: 1px solid white;
+    border-radius: 12px;
+    height: 40px;
+    width: 200px;
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    background-color: rgba(9, 149, 32, 1);
+}
+
+#what-we-do {
+    position: absolute;
+    top: 90vh;
+    /* border: 1px solid blue; */
+    background-color: white;
+    width: inherit;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#dealing-topic {
+    width: 300px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: rgba(8, 124, 27, 1);
+    align-self: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#dealing-body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    width: 45%;
+    align-self: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#vegetative-parts {
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 220px;
+    padding: 10px;
+    margin-top: 30px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#vegetative-parts div {
+    /* border: 1px solid red; */
+    /* padding: 5px; */
+    width: 20%;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#vegetative-parts img {
+    width: 150px;
+}
+
+#vegetative-parts p {
+    font-family: 'Inter', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+#our-produce {
+    position: absolute;
+    top: 160vh;
+    padding: 10px;
+    background-image: url(./Assets/Background\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: inherit;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#our-produce-topic {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: xx-large;
+    align-self: center;
+    margin-top: 30px;
+}
+
+#our-produce-body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    width: 45%;
+    color: rgba(26, 26, 26, 1);
+    align-self: center;
+    margin-top: 20px;
+}
+
+#produce-images {
+    /* border: 1px solid white; */
+    width: 75%;
+    height: 300px;
+    padding: 10px;
+    margin-top: 40px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#produce-images img {
+    width: 250px;
+}
+
+#contact-us {
+    /* border: 1px solid red;/ */
+    position: absolute;
+    top: 245vh;
+    width: inherit;
+    height: 70vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
+    align-self: center;
+}
+
+input, textarea {
+    height: 30px;
+    padding: 5px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-family: 'Inter', sans-serif;
+}
+
+#form-submit {
+    border-radius: 18px;
+    border: 0;
+    height: 35px;
+    width: 100px;
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    background-color: rgba(9, 149, 32, 1);
+    align-self: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+    background-color: rgba(24, 73, 32, 1);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-logo {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}
+
+footer div {
+    /* border: 1px solid red; */
+    width: 150px;
+    align-self: center;
+    justify-self: end;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div img {
+    width: 30px;
+}
+
+#copyright-text {
+    align-self: last baseline;
+}
