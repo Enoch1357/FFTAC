@@ -5,73 +5,76 @@
     Box-sizing: border-box;
 }
 
-.hero {
-    background-image: url(./Assets/Background.png);
+body {
+    height: auto;
+}
+
+#hero-background {
+    width: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
+    background-size: cover;
+    position: absolute;
+    /* z-index: -1; */
 }
 
 header {
-    /* border: 1px solid white; */
-    width: 85%;
-    align-self: center;
-    padding: 5px;
+    height: 20vh;
+    padding: 0% 5%;
+    /* border: 1px solid black; */
     display: flex;
     align-items: center;
-    gap: 10px;
     justify-content: space-between;
+    position: relative;
+    /* z-index: 1; */
+    /* background-color: black; */
+}
+
+#menu {
+    width: 50px;
+    display: none;
 }
 
 #hero-logo {
     width: 120px;
 }
 
-.nav-bar {
-    /* border: 1px solid white; */
-    width: 300px;
-    height: 50px;
+#nav-bar {
+    /* border: 1px solid red; */
+    padding: 0;
+    width: 40%;
+    height: 40%;
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 
-.nav-bar a {
-    /* border: 1px solid white; */
-    height: 50%;
-    display: flex;
-    align-items: center;
+#nav-bar a {
     color: white;
     font-family: 'Source Sans 3', sans-serif;
+    font-size: larger;
     text-decoration: none;
 }
 
-.nav-bar a:hover {
+#nav-bar a:hover {
     text-decoration: underline;
 }
 
 main {
-    /* border: 1px solid green; */
-    width: 100%;
-    height: 315vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    height: auto;
+    /* border: 3px solid green; */
 }
 
 #hero-section {
-    position: absolute;
-    top: 280px;
-    margin-top: 10px;
-    padding: 10px;
-    /* border: 1px solid white; */
-    width: 70%;
-    height: auto;
-    align-self: center;
+    /* border: 1px solid blue; */
+    height: 80vh;
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .company-name {
@@ -79,19 +82,24 @@ main {
     font-family: 'Source Sans 3', sans-serif;
     font-size: 50px;
     font-weight: bold;
-    margin: 0;
+    margin-top: 40vh;
+    text-align: center;
+    align-self: center;
 }
 
 .slogan {
+    /* border: 1px solid red; */
     color: white;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 30px;
     font-weight: bold;
-    margin: 0;
+    /* margin-top: 3vh; */
+    text-align: center;
+    align-self: center;
 }
 
 #call-to-action {
-    margin-top: 30px;
+    margin-top: 50px;
     border: 1px solid white;
     border-radius: 12px;
     height: 40px;
@@ -100,28 +108,25 @@ main {
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400;
     background-color: rgba(9, 149, 32, 1);
+    align-self: center;
 }
 
-#what-we-do {
-    position: absolute;
-    top: 90vh;
-    /* border: 1px solid blue; */
-    background-color: white;
-    width: inherit;
-    height: 70vh;
+#what-we-do-section {
+    /* border: 1px solid red; */
+    height: 90vh;
     display: flex;
     flex-direction: column;
 }
 
 #dealing-topic {
-    width: 300px;
+    width: 30%;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: x-large;
+    font-size: 30px;
     color: rgba(8, 124, 27, 1);
     align-self: center;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 #dealing-body {
@@ -131,26 +136,26 @@ main {
     width: 45%;
     align-self: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #vegetative-parts {
     /* border: 1px solid black; */
-    width: 60%;
-    height: 220px;
-    padding: 10px;
-    margin-top: 30px;
+    width: 70%;
+    height: 60%;
+    padding: 5px;
+    margin-top: 50px;
     align-self: center;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
 #vegetative-parts div {
     /* border: 1px solid red; */
-    /* padding: 5px; */
-    width: 20%;
-    height: 210px;
+    width: 23%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,24 +163,20 @@ main {
 }
 
 #vegetative-parts img {
-    width: 150px;
+    width: 90%;
 }
 
 #vegetative-parts p {
     font-family: 'Inter', sans-serif;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
 }
 
-#our-produce {
-    position: absolute;
-    top: 160vh;
-    padding: 10px;
+#our-produce-section {
+    height: 100vh;
     background-image: url(./Assets/Background\ 2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: inherit;
-    height: 85vh;
     display: flex;
     flex-direction: column;
 }
@@ -185,60 +186,59 @@ main {
     font-weight: 100;
     font-size: xx-large;
     align-self: center;
+    text-align: center;
     margin-top: 30px;
 }
 
 #our-produce-body {
     font-family: 'Source Sans 3', sans-serif;
-    font-size: larger;
+    font-size: x-large;
     font-weight: bold;
     text-align: center;
-    width: 45%;
+    width: 60%;
     color: rgba(26, 26, 26, 1);
     align-self: center;
     margin-top: 20px;
 }
 
 #produce-images {
-    /* border: 1px solid white; */
-    width: 75%;
-    height: 300px;
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 50%;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 30px;
     align-self: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    flex-wrap: wrap;
+    /* gap: 10px; */
 }
 
 #produce-images img {
-    width: 250px;
+    width: 23%;
 }
 
 #contact-us {
-    /* border: 1px solid red;/ */
-    position: absolute;
-    top: 245vh;
-    width: inherit;
+    /* border: 1px solid red; */
     height: 70vh;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
 form {
-    /* border: 1px solid red; */
+    /* border: 1px solid blue; */
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 300px;
-    height: 300px;
+    height: 70%;
     align-self: center;
 }
 
-input, textarea {
+input {
     height: 30px;
     padding: 5px;
 }
@@ -265,14 +265,8 @@ label {
     align-self: center;
 }
 
-button:hover {
-    cursor: pointer;
-}
-
 footer {
-    border: 1px solid black;
-    width: 100%;
-    height: 25vh;
+    height: 30vh;
     background-color: rgba(24, 73, 32, 1);
     padding: 50px;
     display: flex;
@@ -280,8 +274,7 @@ footer {
 }
 
 #footer-logo {
-    width: 100px;
-    height: 100px;
+    width: 120px;
     align-self: center;
 }
 
@@ -300,4 +293,180 @@ footer div img {
 
 #copyright-text {
     align-self: last baseline;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    #nav-bar {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .company-name {
+        font-size: 25px;
+        margin-top: 30vh;
+    }
+
+    .slogan {
+        font-size: 20px;
+        margin-top: 3vh;
+    }
+
+    #dealing-topic {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    #dealing-body {
+        width: 80%;
+        font-size: medium;
+        margin-top: 10px;
+    }
+
+    #vegetative-parts {
+        height: 75%;
+        margin-top: 10px;
+    }
+
+    #vegetative-parts div {
+        width: 95%;
+        height: 20%;
+    }
+
+    #vegetative-parts img {
+        width: 35%;
+    }
+
+    #vegetative-parts p {
+        font-size: large;
+    }
+
+    #our-produce-topic {
+        font-size: x-large;
+    }
+
+    #our-produce-body {
+        width: 90%;
+        font-size: large;
+    }
+
+    #produce-images {
+        margin-top: 50px;
+    }
+
+    #produce-images img {
+        width: 48%;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    #footer-logo {
+        width: 80px;
+    }
+
+    footer div {
+        width: 120px;
+    }
+
+    footer div img {
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 880px) and (min-width: 481px) {
+    #nav-bar {
+        width: 50%;
+    }
+    
+    .company-name {
+        margin-top: 30vh;
+    }
+
+    .slogan {
+        margin-top: 3vh;
+    }
+
+    #dealing-body {
+        width: 70%;
+    }
+
+    #vegetative-parts {
+        margin-top: 30px;
+    }
+
+    #vegetative-parts div {
+        width: 46%;
+        height: 50%;
+    }
+
+    #vegetative-parts img {
+        width: 50%;
+    }
+
+    #our-produce-body {
+        width: 80%;
+    }
+
+    #produce-images {
+        margin-top: 20px;
+        width: 55%;
+        height: 60%;
+    }
+
+    #produce-images img {
+        width: 45%;
+    }
+
+    form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 881px) {
+    #nav-bar {
+        width: 30%;
+    }
+
+    .company-name {
+        margin-top: 30vh;
+    }
+
+    .slogan {
+        margin-top: 3vh;
+    }
+}
+
+@media screen and (min-height: 720px) and (min-width: 881px) and (max-width: 1024px) { /* Surface pro 7*/
+    #vegetative-parts div {
+        width: 46%;
+        height: 50%;
+    }
+    
+    #our-produce-body {
+        width: 70%;
+    }
+    
+    #produce-images {
+        margin-top: 30px;
+        height: 60%;
+    }
+
+    #produce-images img {
+        width: 48%;
+    }
+
+    form {
+        width: 50%;
+    }
 }

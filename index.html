@@ -1,111 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
-        <title>Food for Tomorrow</title>
-        <link rel="stylesheet" href="./styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+3&display=swap" rel="stylesheet">
-    </head>
-    <body class="hero">
-        
-        <!-- Header -->
-        <header>
-            <img id="hero-logo" src="./Assets/New dark logo.png" alt="logo">
-            <ul class="nav-bar">
-                <li><a href=""><p>Catalogue</p></a></li>
-                <li><a href=""><p>FAQ</p></a></li>
-                <li><a href=""><p>Contact us</p></a></li>
-            </ul>
-            
-        </header>
-        <!-- End of header -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food for Tomorrow</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+3&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="hero-background" style="background-image: url(./Assets/Background.png);"></div>
 
-        <!-- Main -->
-        <main>
+    <header>
+        <img id="menu" src="./Assets/menu ico.png" alt="Menu">
+        <img id="hero-logo" src="./Assets/New dark logo.png" alt="Logo">
+        <ul id="nav-bar">
+            <li><a href="#">Catalogue</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+    <!-- End of header -->
 
-            <!-- Hero section -->
-            <section id="hero-section">
-                <p class="company-name">Food for Tomorrow Agricultural Company</p>
-                <p class="slogan">Your go-to agency for agricultural produce</p>
-                <button id="call-to-action">REACH OUT TO US</button>
-            </section>
-            <!-- End of hero section -->
+    <!-- Main content -->
+    <main>
+        <section id="hero-section">
+            <p class="company-name">Food for Tomorrow Agricultural Company</p>
+            <p class="slogan">Your go-to agency for agricultural produce</p>
+            <button id="call-to-action">REACH OUT TO US</button>
+        </section>
+        <!-- End of hero section -->
 
-            <!-- What we do section -->
-            <section id="what-we-do">
-                <p id="dealing-topic">What we deal in..</p>
-                <p id="dealing-body">Thanks to our able team of agric specialists, we produce a healthy variety of vegetative parts, like rhizomes, seeds, bulbs, stems among others, that can be employed in propagation to secure a bumper harvest.</p>
-                <div id="vegetative-parts">
-                    <div>
-                        <img src="./Assets/Bulbs.png" alt="Bulbs">
-                        <p>Bulbs</p>
-                    </div>
-                    <div>
-                        <img src="./Assets/Rhizome.png" alt="Rhizome">
-                        <p>Rhizomes</p>
-                    </div>
-                    <div>
-                        <img src="./Assets/Seeds.png" alt="Seeds">
-                        <p>Seeds</p>
-                    </div>
-                    <div>
-                        <img src="./Assets/Stems.png" alt="Stems">
-                        <p>Stems</p>
-                    </div>
+        <!-- What we do section -->
+        <section id="what-we-do-section">
+            <p id="dealing-topic">What we deal in..</p>
+            <p id="dealing-body">Thanks to our able team of agric specialists, we produce a healthy variety of vegetative parts, like rhizomes, seeds, bulbs, stems among others, that can be employed in propagation to secure a bumper harvest.</p>
+            <div id="vegetative-parts">
+                <div>
+                    <img src="./Assets/Bulbs.png" alt="Bulbs">
+                    <p>Bulbs</p>
                 </div>
-            </section>
-            <!-- End of What we do section -->
-
-            <!-- Our produce section -->
-            <section id="our-produce">
-                <p id="our-produce-topic">Our results speak for themselves</p>
-                <p id="our-produce-body">We are big-time producers of a vast range of locally cultivated products. From grains to cereals, tubers to sugarcane, oil palm to a variety of vegetables of high demand in the nation. We are open to around the clock distribution, nation-wide. Looking to connect with producers for your business? Rest assured we are your preferred choice.</p>
-                <div id="produce-images">
-                    <img src="./Assets/Palm group.png" alt="Oil Palm">
-                    <img src="./Assets/Maize group.png" alt="Maize">
-                    <img src="./Assets/Yam group.png" alt="Yam">
-                    <img src="./Assets/Rice group.png" alt="Rice">
+                <div>
+                    <img src="./Assets/Rhizome.png" alt="Rhizome">
+                    <p>Rhizomes</p>
                 </div>
-            </section>
-            <!-- End of Our produce section -->
-
-            <!-- Contact Us -->
-            <section id="contact-us">
-                <p style="align-self: center; color: rgba(8, 124, 27, 1); font-size: xx-large; font-family: 'Inter', sans-serif;">Contact us</p>
-                <form action="" id="contact-form">
-                    <div>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" autocomplete="off">
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="Email" id="email" autocomplete="on" required>
-                    </div>
-                    <div>
-                        <label for="message">Your message</label>
-                        <textarea name="Message" id="message" cols="30" rows="1" required></textarea>
-                    </div>
-                    <button id="form-submit">SUBMIT</button>
-                </form>
-            </section>
-
-        </main>
-        <!-- End of main -->
-
-        <!-- Footer --> 
-        <footer>
-            <img id="footer-logo" src="./Assets/New dark logo.png" alt="logo">
-            <p id="copyright-text" style="font-family: 'Source Sans 3', sans-serif; color: rgb(128, 128, 128);">©FFTAC 2023</p>
-            <div>
-                <img src="./Assets/Facebook_White.png" alt="Facebook">
-                <img src="./Assets/Twitter.png" alt="Twiiter">
-                <img src="./Assets/Instagram_White.png" alt="Instagram">
+                <div>
+                    <img src="./Assets/Seeds.png" alt="Seeds">
+                    <p>Seeds</p>
+                </div>
+                <div>
+                    <img src="./Assets/Stems.png" alt="Stems">
+                    <p>Stems</p>
+                </div>
             </div>
-        </footer>
-        <!-- End of footer -->
+        </section>
+        <!-- End of What we do section -->
 
-    </body>
+        <!-- Our produce section -->
+        <section id="our-produce-section">
+            <p id="our-produce-topic">Our results speak for themselves</p>
+            <p id="our-produce-body">We are big-time producers of a vast range of locally cultivated products. From grains to cereals, tubers to sugarcane, oil palm to a variety of vegetables of high demand in the nation. We are open to around the clock distribution, nation-wide. Looking to connect with producers for your business? Rest assured we are your preferred choice.</p>
+            <div id="produce-images">
+                <img src="./Assets/Palm group.png" alt="Oil Palm">
+                <img src="./Assets/Maize group.png" alt="Maize">
+                <img src="./Assets/Yam group.png" alt="Yam">
+                <img src="./Assets/Rice group.png" alt="Rice">
+            </div>
+        </section>
+        <!-- End of our produce section -->
+
+        <!-- Contact Us -->
+        <section id="contact-us">
+            <p style="align-self: center; color: rgba(8, 124, 27, 1); font-size: 40px; font-family: 'Inter', sans-serif;">Contact us</p>
+            <form action="" id="contact-form">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" autocomplete="off">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="Email" id="email" autocomplete="on" required>
+                </div>
+                <div>
+                    <label for="message">Your message</label>
+                    <textarea name="Message" id="message" cols="30" rows="5" required></textarea>
+                </div>
+                <button id="form-submit">SUBMIT</button>
+            </form>
+        </section>
+
+    </main>
+    <!-- End of main -->
+
+    <!-- Footer -->
+    <footer>
+        <img id="footer-logo" src="./Assets/New dark logo.png" alt="logo">
+        <p id="copyright-text" style="font-family: 'Source Sans 3', sans-serif; color: rgb(128, 128, 128);">©FFTAC 2023</p>
+        <div>
+            <img src="./Assets/Facebook_White.png" alt="Facebook">
+            <img src="./Assets/Twitter.png" alt="Twiiter">
+            <img src="./Assets/Instagram_White.png" alt="Instagram">
+        </div>
+    </footer>
+    <!-- End of footer -->
+    
+</body>
 </html>
